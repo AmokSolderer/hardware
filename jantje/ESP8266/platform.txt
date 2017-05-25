@@ -92,7 +92,8 @@ recipe.size.regex.data=^(?:\.data|\.rodata|\.bss)\s+([0-9]+).*
 
 tools.esptool.cmd=esptool
 tools.esptool.cmd.windows=esptool.exe
-tools.esptool.path={runtime.tools.esptool-0.4.9.path}
+#the line below should be tools.esptool.path={runtime.tools.esptool-0.4.5.path} but due to bug in 4.0 this won't work
+tools.esptool.path={packages}/esp8266/tools/esptool/0.4.5
 tools.esptool.network_cmd=python
 tools.esptool.network_cmd.windows=python.exe
 
